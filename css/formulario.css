@@ -1,0 +1,48 @@
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 35%;
+      margin: 0 auto;
+      margin-top: 2%;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    
+  }
+  
+  
+  input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+  }
+  
+  .botao_login{
+      width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(245 211 18 / 70%);
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+  
+  .botao_login:hover {
+    background-color: rgb(245 211 18 / 100%);
+  }
+  #span{
+    color: red;
+    font-size: 0.8em;
+  }

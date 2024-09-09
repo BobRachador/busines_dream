@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    background-color: #FFF;
+  
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: #5d0c1d;
+    
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .logo {
+    width: 15%;
+    margin-left: 8%;
+  }
+  #cont{
+    background-color: #760d23;
+    border-radius: 50%;
+    margin-top: -15%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    width: 25px;
+    text-decoration: none;
+}
+  .busca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    background-color: #FFF;
+    height: 40px;
+    border-radius: 18px;
+  }
+
+  .area_busca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+
+  .busca form input {
+    padding-left: 7%;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .busca form input:focus {
+    outline: 0;
+  }
+
+  .topo li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.3em;
+    margin-right: 25px;
+  }
+
+  .topo a {
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  .topo a:hover {
+    color: rgb(222, 209, 192);
+  }
+
+  .carrinho {
+    width: 50px;
+    margin-right: 8%;
+   
+  }
+  .carrinho a{
+     text-decoration: none;
+  }
+  .box, .box1 {
+    display: inline-block;
+    width: 230px;
+    height: 290px;
+    padding: 0.7%;
+    text-align: center;
+    margin-inline: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+  }
+  
+  .box:hover, .box1:hover{
+    padding: 0.8%;
+    width: 240px;
+  }
+  .box a, .box1 a {
+    color: #333;
+    font-size: 1.3em;
+    text-decoration: none;
+  }
+  .box a:hover, .box1 a:hover {
+    color: #005bed;
+    
+  }
+
+  .capa {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+
+  .container_vend, .container_busca {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+  }
+
+  section {
+    overflow: hidden;
+    width: 60%;
+    margin: 3% auto;
+   padding-inline: 2%;
+  }
+
+  .box:first-child, .box1:first-child{
+    margin-left: 0;
+  }
+
+  .box:last-child, .box1:last-child{
+    margin-right: 0;
+  }
+
+  .botoes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .botao {
+   width: 150px;
+    padding: 10px 40px; 
+    height: 307px;
+   border: none;
+  }
+  
+  .lupa {
+    background: none;
+    border: none;
+    width: 10%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  #prev{
+    z-index: 2;
+    position: absolute;
+    border: none;
+    left: 17%;
+    top: 25%;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  }
+  #next{
+    z-index: 2;
+    position: absolute;
+    border: none;
+    top: 25%;
+    right: 17%;
+    -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  }
+  #prev1{
+    z-index: 2;
+    position: absolute;
+    left: 17%;
+    top: 75%;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  }
+  #next1{
+    z-index: 2;
+    position: absolute;
+    top: 75%;
+    right: 17%;
+    -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  }
+  hr{
+    width: 80%;
+    margin: 0 auto;
+  }

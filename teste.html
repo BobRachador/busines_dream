@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel with Overlapping Buttons</title>
+<style>
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .item {
+        flex: 0 0 auto;
+        width: 300px;
+        height: 200px;
+        background-color: #ccc;
+        margin-right: 1rem;
+        scroll-snap-align: start;
+        position: relative;
+    }
+    
+    .button-container {
+        position: fixed;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    
+    .prev-button,
+    .next-button {
+        background-color: #333;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .prev-button {
+        margin-right: 1rem;
+    }
+</style>
+</head>
+<body>
+<div class="carousel">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+</div>
+<div class="button-container">
+    <button class="prev-button" onclick="scrollCarousel(-1)">Previous</button>
+    <button class="next-button" onclick="scrollCarousel(1)">Next</button>
+</div>
+<script>
+    const carousel = document.querySelector('.carousel');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+
+    function scrollCarousel(direction) {
+        carousel.scrollBy({
+            left: direction * (carousel.offsetWidth + 20), // 20 is the margin-right of items
+            behavior: 'smooth'
+        });
+    }
+</script>
+</body>
+</html>
